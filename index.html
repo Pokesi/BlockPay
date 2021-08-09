@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BlockPay - Links for instant payment</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="#" id="logo">BLOCKPAY</a>
+      <a href="#info">About</a>
+      <a href="#send">Send a link</a>
+      <a href="#don8">Donate</a>
+      <a href="#abme">About me</a>
+      <a href="#" class="right">Connect MetaMask</a>
+    </nav>
+    <h1>BLOCKPAY</h1>
+    <h3>Links for instant blockchain-based payment!</h3>
+    <infoBox>
+      <h3 id="info">Info</h3>
+      <P>Supported Blockchains</P>
+      <ul>
+        <li>Ethereum
+        <li>BSC
+        <li>Matic/Polygon
+        <li>Heco
+        <li>Fantom
+      </ul>
+      <p>How do I know I'm not being tracked?<br>It's all done in the frontend, and the payment is blockchain-based, so no central server processes your payments!</p>
+    </infoBox>
+    <infoBox>
+      <h3 id="send">Send a link</h3>
+      <p>It's easy!</p>
+      <p>Your address</p>
+      <input type="text" id="addr" placeholder="Your address..."></input>
+      <p>How much should they pay?</p>
+      <input type="text" id="amnt" placeholder="Amount of currency..."></input>
+      <p>What currency? (Known: ETH/BNB/MATIC/HT/FTM, otherwise paste the contract address and blockchain here. e.g. ETH:0x0000000000000000000)</p>
+      <input type="text" id="curr" placeholder="Currency..."></input><br>
+      <button type="button" onclick="genLink()">Generate link</button>
+      <p id="lnk"></p>
+    </infoBox>
+    <infoBox>
+        <h3 id="don8">Donate</h3>
+        <p>I have the same address on a bunch of blockchains</p>
+        <h3 style="font-size: 22px;">ETH/BNB/MATIC/HT/FTM: <i>0x3e522051A9B1958Aa1e828AC24Afba4a551DF37d</i>
+    </infoBox>
+    <script src="script.js"></script>
+  </body>
+</html>

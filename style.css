@@ -1,0 +1,169 @@
+:root {
+  --main-bg:     #01295F;
+  --light-bg:    #012950;
+  --lighter-bg:  #9381FF;
+  --lightest-bg: #9381E0;
+  --dark-bg:     #11295F;
+}
+
+html {
+  font-family: Poppins;
+  background-color: var(--dark-bg)
+}
+
+input[type=text] {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid var(--lightest-bg);
+  background-color: var(--lightest-bg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+button[type=button] {
+  background-color: var(--lighter-bg);
+  border: none;
+  color: var(--light-bg);
+  font-family: Poppins;
+  padding: 16px 32px;
+  text-decoration: none;
+  //margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input[type=text]:focus, button:focus {
+  border: 3px solid var(--light-bg);
+}
+
+nav {
+  width: 100%; 
+  height: 84px; 
+  background-color: var(--lighter-bg);
+  border-radius: 7px;
+  
+}
+
+payment {
+  width: 100%; 
+  height: 84px; 
+  background-color: var(--lightest-bg);
+  border-radius: 7px;
+}
+
+h1 {
+  background: linear-gradient(-45deg, var(--main-bg), var(--light-bg), var(--lighter-bg), var(--lightest-bg));
+	background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 5s ease infinite;
+  text-align: center;
+  font-size: 90px;
+  padding-bottom: 20px;
+}
+h2 {
+  background: linear-gradient(-45deg, var(--main-bg), var(--light-bg), var(--lighter-bg), var(--lightest-bg));
+	background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 5s ease infinite;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+h3 {
+  background: linear-gradient(-45deg, var(--main-bg), var(--light-bg), var(--lighter-bg), var(--lightest-bg));
+	background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 5s ease infinite;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+h4 { 
+  background: linear-gradient(-45deg, var(--main-bg), var(--light-bg), var(--lighter-bg), var(--lightest-bg));
+	background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 999999999999999999999s ease infinite;
+  color: var(--lighter-bg);
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+sub {
+  text-align: center;
+  font-size: 25px;
+  padding: 255px;
+}
+
+infoBox {
+  background-color: var(--lighter-bg)
+}
+
+infoBox p, li {
+  color: var(--lighter-bg)
+}
+
+table, th, td {
+  border: 0px solid #012950;
+  color: var(--lighter-bg);
+  font-size: 25px  
+}
+
+h3#payment {
+  color: var(--lighter-bg);
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav a {
+  display: block;
+  float: left;
+  font-size: 24px;
+  transition: 0.4s;
+  padding-top: 25px;    padding-right: 10px;    padding-bottom: 20px;    padding-left: 10px;
+  text-decoration: none;
+
+}
+
+nav a .right {
+  align-self: right;
+  padding-top: 40px;
+  //padding-bottom: 10px
+}
+
+nav a:hover {
+  display: inline-block;
+  background: #0FFFF0;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px grey;
+}
+center { text-align: center }
+nav:hover { /* */ }
+
+#logo {
+  font-size: 28px;
+  padding-right: 22px;
+  padding-top: 22px;
+}

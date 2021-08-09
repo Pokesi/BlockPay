@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BlockPay - Links for instant payment</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="https://blockpay.pokesi.repl.co" id="logo">BLOCKPAY</a>
+      <a id="PAYMENT_ADDR">PAYMENT_ADDR</a>
+      <a id="PAYMENT_CURR">PAYMENT_CURR</a>
+      <a id="PAYMENT_AMNT">PAYMENT_AMNT</a>
+      <a href="#" id="donate" onclick="donate()">Donate</a>
+      <a href="#" class="right">Connect MetaMask</a>
+    </nav>
+    <h2>BlockPay Payment Screen</h2>
+    <payment>
+      <h3 id="payment">Payment</h3>
+      <table style="width:100%">
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Paying to:</td>
+          <td>Currency paying:</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td id="payingto"></td>
+          <td id="payingcu"></td>
+          <td><button type="button" id="supr" onclick="pay()">Pay</button></td>
+        </tr>
+      </table>
+    </payment>
+    <h4>Remember to change the gas fee!</h4>
+    <script src="payScript.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
